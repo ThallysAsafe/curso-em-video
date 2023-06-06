@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Teags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        header{
+            background-color: gray;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: aquamarine;
+            padding: 3px;
+            box-shadow: 3px 3px 1px 1px black;
+        }
+        nav > a{
+            text-decoration: none;
+            color: black;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            margin: 4px 4px 9px 14px rgba(4, 4, 4, 0.449);
+        }
+        article{
+            background-color: antiquewhite;
+            font-weight: bold;
+            color: black;
+            margin-right: 3px;
+        }
+        article > aside {
+            background-color: bisque;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola{
+            height:100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="a">Link</a>
+            <a href="a">Link</a>
+            <a href="a">Link</a>
+            <a href="a">Link</a>
+            <a href="a">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+         <article>
+            <h2>Notícia do brasil atual</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia et labore dolorum, molestias eum laborum repudiandae excepturi, praesentium cum aliquid nemo omnis. Eligendi, rerum! Omnis maiores eaque autem veritatis placeat?</p>
+            <aside>
+                <p>Artigo escrito por José da Silva</p>
+            </aside>
+         </article>
+        </section>
+    </main>
+    <footer>
+      Desenvolvido pelo Thallão
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

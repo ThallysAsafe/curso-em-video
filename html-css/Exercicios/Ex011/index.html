@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Dinamica da imagem</h1>
+    <p>Tente abrir o site em varios dispositivos diferentes ou diminuir a guia do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto-grande">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+   
+    <audio src="midia/Sunny Day - Reed Mathis.mp3" preload="metadata" controls autoplay loop>
+        <p>Infelizmente, o seu navegador não conseguiu carregar a musica, mas <a href="midia/Sunny Day - Reed Mathis.mp3">clique aqui para baixar</a></p> </audio>
+    
+        
+    
+</body>
+</html>
