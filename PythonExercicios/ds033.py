@@ -13,8 +13,8 @@ if b > a and b > c:
     maior = b
 if c > a and c > b:
     maior = c
-print('O menor valor digitado foi {}'.format(menor))
-print('O maior valor digitado foi {}'.format(maior))
+print('O menor valor digitado foi \033[1;31;40m{}\033[m'.format(menor))
+print('O maior valor digitado foi \033[1;32;40m{}\033[m'.format(maior))
 # if n1 < n2 < n3:
 #    print('O menor numero é {} e o maior numero é {}'.format(n1, n3))
 # elif n3 < n2 < n1:
