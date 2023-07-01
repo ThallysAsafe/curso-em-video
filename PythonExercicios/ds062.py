@@ -2,16 +2,17 @@ print('Calculadora de PA')
 a1 = float(input('Digite o primeiro termo da PA: '))
 r = float(input('Digite a razão da PA: '))
 v = a1
-c = 0
 s = ' '
+n = 10
 print('Esses são os 10 primeiros termos:')
-while c != 10 or s == 'S':
-    if c == 0:
-        v = v
-        c += 1
-    else:
-        c += 1
+while s != 'N':
+    x = 0
+    while x != n:
+        print(v, end=' ')
         v += r
-    print(v, end=' ')
-s = str(input('Você deseja continuar? [S/N]')).upper()
+        x += 1
+    s = str(input('\nVocê deseja continuar? [S/N]')).upper()
+    n = int(input('Quantos termos você quer adicionar: '))
+    if n == 0:
+        s = 'N'
 print('Fim do programa')
