@@ -1,13 +1,18 @@
-import math
-n = int(input('Digite quantos elementos você quer que apareça: '))
-x = 0
-a = 1
-b = 1
-while x != n:
-    x += 1
-    r = b
-    if x > 2:
-        a = a + b + r
-        r += 1
-    print(a)
-
+print('Sequencia de Fibonacci')
+print('=-='*20)
+quantidade = int(input('Digite quantos termos você quer mostrar? '))
+print('=-='*20)
+cont = 0
+while cont <= quantidade:
+    cont += 1
+    if cont == 1:
+        t1 = 0
+        t2 = 1
+        t3 = t2 + t1
+        print('{} -> {} ->'.format(t1, t2), end=' ')
+    else:
+        t1 = t2
+        t2 = t3
+        t3 = t2 + t1
+    print('{} ->'.format(t3), end=' ')
+print('Fim!!!')
