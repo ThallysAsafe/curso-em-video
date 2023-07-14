@@ -1,3 +1,3 @@
-nome = input('Digite seu nome:')
-print('É um prazer te conhecer, {}!'.format(nome))
-
+from random import randint
+n = randint(100,101)
+print(n)

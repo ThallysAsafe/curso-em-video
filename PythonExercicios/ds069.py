@@ -1,23 +1,21 @@
 cont = 0
 qmasc = 0
 qfem = 0
+print('===========' * 8)
+print('CADASTRE UMA PESSOA')
+print('===========' * 8)
 while True:
-    print('===========' * 8)
-    print('CADASTRE UMA PESSOA')
-    print('===========' * 8)
     idade = int(input('Idade: '))
     sexo = str(input('Sexo: [M/F]')).upper()
     print('===========' * 8)
-    x = str(input('Quer continuar: [S/N]')).upper().strip()
-    if x != 'SN':
-        x = str(input('Quer continuar: [S/N]')).upper().strip()
+    x = ' '
+    while x not in 'SN':
+        x = str(input('Quer continuar: [S/N]')).upper().strip()[0]
     if idade > 18:
         cont += 1
+    if sexo == 'M':
         qmasc += 1
-        qfem += 1
-    elif sexo == 'M':
-        qmasc += 1
-    elif sexo == 'F' and idade < 20:
+    if sexo == 'F' and idade < 20:
         qfem += 1
     if x == 'N':
         break
